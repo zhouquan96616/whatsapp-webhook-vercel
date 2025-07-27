@@ -9,12 +9,12 @@ export default function handler(req, res) {
       console.log("WEBHOOK_VERIFIED");
       res.status(200).send(challenge);
     } else {
-      res.status(403)end();
+      res.status(403)send();
     }
   } else if (req.method === "POST") {
     console.log("POST webhook triggered:", JSON.stringify(req.body, null, 2));
-    res.status(200)end();
+    res.status(200)send();
   } else {
-    res.status(404)end();
+    res.status(404)send();
   }
 }
