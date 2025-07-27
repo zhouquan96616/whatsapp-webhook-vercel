@@ -1,0 +1,8 @@
+{
+  "name": "whatsapp-webhook-vercel",
+  "version": "1.0.0",
+  "scripts": {
+    "vercel-build": "echo 'Build complete'"
+  },
+  "dependencies": {}
+}
